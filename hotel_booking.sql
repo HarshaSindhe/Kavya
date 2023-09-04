@@ -82,7 +82,15 @@ CREATE TABLE `login` (
 -- Dumping data for table `login`
 --
 
-
+INSERT INTO `login` (`id`, `username`, `password`) VALUES
+(7, 'SUPRITH', '123'),
+(1, 'divya', '1234'),
+(8, 'seema', '12345678'),
+(6, 'seema', 'seema1234'),
+(10, 'sharat', 'sharat'),
+(3, 'sharat', 'sharath'),
+(4, 'shiva', 'shivaji'),
+(9, 'sindhu', 'sinshi123');
 
 -- --------------------------------------------------------
 
