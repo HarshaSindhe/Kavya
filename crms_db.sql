@@ -51,6 +51,15 @@ INSERT INTO `complainants` (`id`, `name`, `address`, `contact`, `status`, `email
 -- Table structure for table `complaints`
 --
 
+CREATE TABLE `complaints` (
+  `id` int(11) NOT NULL,
+  `complainant_id` int(30) NOT NULL,
+  `message` text NOT NULL,
+  `address` text NOT NULL,
+  `date_created` datetime NOT NULL DEFAULT current_timestamp(),
+  `status` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1=Pending,2=Received,3=Action Made'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Dumping data for table `complaints`
 --
